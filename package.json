@@ -1,0 +1,60 @@
+{
+  "name": "electric",
+  "version": "1.0.0",
+  "description": "Landing of electrical services.",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  },
+  "author": "Ruslan Kanashuk<ruslan.kanashuk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "^6.6.3",
+    "jquery": "^3.5.1",
+    "motion-ui": "^2.0.3",
+    "slick-carousel": "^1.8.1",
+    "what-input": "^5.2.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-extname": "^0.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "gulp-ttf2woff2": "^3.0.0",
+    "js-yaml": "^3.14.0",
+    "panini": "^1.3.0",
+    "rimraf": "^2.7.1",
+    "style-sherpa": "^1.0.0",
+    "uncss": "^0.16.2",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^12.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruslkan/lending-electric-services.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruslkan/ending-electric-services/issues",
+    "email": "ruslan.kanashuk@gmail.com"
+  },
+  "private": true
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{root}}assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{root}}assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{root}}assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{root}}assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="{{root}}assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#fffdfd">
+</head>
+
+<body>
+  <div class="page">
+    <div class="page__off-canvas" id="mainNav" data-off-canvas data-transition="overlap">
+      <div class="page__off-canvas-inner">
+        <!-- Begin close button main navigation -->
+        <button class="main-nav__close-button" aria-label="Close menu" type="button" data-close="mainNav">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <!-- End close button main navigation -->
+        <!-- Begin main navigation -->
+        <div class="page__main-nav">
+          {{> main-nav}}
+        </div>
+        <!-- End main navigation -->
+      </div>
+    </div>
+    
+    <div class="page__off-canvas-content" data-off-canvas-content>
+      <!-- Begin top container -->
+      <div class="page__top-container">
+        <div class="page__container">
+          {{> top-container}}
+        </div>
+      </div>
+      <!-- End top container -->
+      <!-- Begin header -->
+      {{> header}}
+      <!-- End header -->
+      {{> body}}
+      <!-- Begin footer -->
+      {{> footer}}
+      <!-- End footer -->
+    </div>
+  </div>
+  <!-- Begin modal -->
+  {{> modal-global}}    
+  <!-- End modal -->
+  <!-- Begin scripts -->
+  <script src="{{root}}assets/js/app.js"></script>
+  <!-- End scripts -->
+</body>
+
+</html>

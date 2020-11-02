@@ -1,0 +1,10 @@
+<div class="contacts-widget">
+  <svg class="contacts-widget__icon">
+    <use xlink:href="{{root}}assets/img/sprite/icon.svg#maps"></use>
+  </svg>
+  {{#each contacts.address}}
+  <p class="contacts-widget__text">{{country}}, {{region}}
+    <br>{{city}}, {{street}}, {{house}}, {{flat}}
+  </p>
+  {{/each}}
+</div>

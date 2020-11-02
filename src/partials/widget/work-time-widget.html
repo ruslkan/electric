@@ -1,0 +1,12 @@
+<div class="contacts-widget">
+  <svg class="contacts-widget__icon">
+    <use xlink:href="{{root}}assets/img/sprite/icon.svg#clock"></use>
+  </svg>
+  <ul class="contacts-widget__list">
+    {{#each contacts.work_time}}
+    <li class="contacts-widget__item">
+      <time>{{ this }}</time>
+    </li>
+    {{/each}}
+  </ul>
+</div>

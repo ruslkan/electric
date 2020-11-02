@@ -1,0 +1,75 @@
+<section id="workingProcess" class="section section__bg working-process" data-magellan-target="workingProcess">
+  <div class="page__container">
+    <h2 class="section__headline">Рабочий процесс</h2>
+    <p class="section__subheadline">
+      Профессиональный электромонтаж - это идеальный метод уменьшения вероятности возникновения проблем в будущем.
+    </p>
+    <div class="section__content" data-equalizer="workingProcessCard">
+      <!-- Begin arrow horizontal -->
+      <div class="working-process__line-area">
+        <svg class="working-process__line-horizontal">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontalSmall"></use>
+        </svg>
+        <svg class="working-process__line-horizontal-1">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontal"></use>
+        </svg>
+        <svg class="working-process__line-horizontal-2">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontal"></use>
+        </svg>
+        <svg class="working-process__line-horizontal-3">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontal"></use>
+        </svg>
+      </div>
+      <!-- End arrow horizontal -->
+      <!-- Begin working process card -->
+      {{#each working-process.card}}
+      <div class="section__working-process-card">
+        {{> working-process-card}}
+      </div>
+      {{/each}}
+      <!-- End working process card -->
+      <!-- Begin arrow vertical -->
+      <div class="working-process__line-area">
+        <svg class="working-process__line-vertical">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineVertical"></use>
+        </svg>
+      </div>
+      <!-- End arrow vertical -->
+      <!-- Begin arrow horizontal -->
+      <div class="working-process__line-area">
+        <svg class="working-process__line-horizontal-revers">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontalRevers"></use>
+        </svg>
+        <svg class="working-process__line-horizontal-revers-1">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontalRevers"></use>
+        </svg>
+        <svg class="working-process__line-horizontal-revers-2">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lineHorizontalRevers"></use>
+        </svg>
+      </div>
+      <!-- End arrow horizontal -->
+      <!-- Begin working process card -->
+      {{#each working-process.card-5}}
+      <div class="section__working-process-card-5">
+        {{> working-process-card}}
+      </div>
+      {{/each}}
+      {{#each working-process.card-6}}
+      <div class="section__working-process-card-6">
+        {{> working-process-card}}
+      </div>
+      {{/each}}
+      {{#each working-process.card-7}}
+      <div class="section__working-process-card-7">
+        {{> working-process-card}}
+      </div>
+      {{/each}}
+      {{#each working-process.card-8}}
+      <div class="section__working-process-card-8">
+        {{> working-process-card}}
+      </div>
+      {{/each}}
+      <!-- End working process card -->
+    </div>
+  </div>
+</section>

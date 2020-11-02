@@ -1,0 +1,154 @@
+/*==================
+	2.5.3 Modal Photo
+====================*/
+.modal-photo {
+	@include reveal-overlay(
+		$background: $colorBlueMedium);
+	@include reveal-modal-base;
+	max-height:initial;
+	border: none;
+	border-radius: 5px;
+	color: $colorGrayLight;
+	overflow: hidden;
+	margin: 0 auto;
+	@include breakpoint(small) {
+		height: 75%;
+		width: 90%;
+		max-width: 90%;
+	}
+	@include breakpoint(medium) {
+		height: 55%;
+		width: 90%;
+		max-width: 90%;
+	}
+	@include breakpoint(large, xlarge, xxlarge, slarge) {
+		height: 75%;
+		width: 60%;
+		max-width: 60%;
+	}
+	@include breakpoint(sslarge) {
+		height: 45%;
+		width: 30%;
+		max-width: 30%;
+	}
+
+	&__top-container {
+		@include xy-grid-container;
+		@include xy-gutters(
+			$gutters: 2rem,
+			$gutter-type: padding,
+			$gutter-position: (top, bottom));
+		@include xy-grid;
+	}
+
+	&__logo {
+		@include xy-grid;
+		@include breakpoint(small) {
+			@include flex-align(center, middle);
+			@include xy-cell(12);
+			padding-bottom: 0.5rem;
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(4);
+			padding-bottom: 0;
+		}
+		@include breakpoint(large) {
+			@include xy-cell(4);
+			padding-bottom: 0;
+		}
+	}
+
+	&__headline {
+		@include flex-align-self(middle);
+		text-align: right;
+		font-size: rem-calc(26);
+		@include font-bold(
+			$weight: 600);
+		font-family: $capitalFontFamily;
+		@include breakpoint(small) {
+			@include xy-cell(12);
+			text-align: center;
+			padding-top: 0.5rem;
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(8);
+			padding-top: 0;
+		}
+		@include breakpoint(large) {
+			@include xy-cell(8);
+			padding-top: 0;
+		}
+	}
+
+	&__gallery {
+		padding: 1rem 4rem;
+		max-height:initial;
+	}
+
+	&__gallery-photos {
+		@include orbit-container;
+		@include xy-grid;
+		overflow: visible;
+	}
+
+	&__gallery-photos-item {
+		@include orbit-slide;
+		height: auto;
+		max-height: 90%;
+
+ 		&.no-motionui {
+    	&.is-active {
+      	top: 0;
+      	left: 0;
+    	}
+  	}
+	}
+
+	&__gallery-photos-image {
+		max-height:initial;
+		@include orbit-image;
+		@include thumbnail;
+	}
+
+	&__gallery-previous {
+		@include disable-mouse-outline;
+  	@include vertical-center;
+    z-index: 10;
+    color: $colorGrayLight;
+		@include orbit-previous;
+		top: 50%;
+		left: 2rem;
+    padding: 0.5rem;
+    @include bordered(
+    	$width: 1px,
+    	$type: solid,
+    	$color: $colorGrayLight);
+
+    &:hover,
+  	&:active,
+  	&:focus {
+    	background-color: $colorGrayMedium;
+  	}
+	}
+
+	&__gallery-next {
+  	@include disable-mouse-outline;
+  	@include vertical-center;
+    z-index: 10;
+    color: $colorGrayLight;
+    @include orbit-next;
+    top: 50%;
+    right: 2rem;
+    padding: 0.5rem;
+    @include bordered(
+    	$width: 1px,
+    	$type: solid,
+    	$color: $colorGrayLight);
+
+    &:hover,
+  	&:active,
+  	&:focus {
+    	background-color: $colorGrayMedium;
+  	}
+	}
+}

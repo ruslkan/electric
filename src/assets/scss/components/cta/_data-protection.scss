@@ -1,0 +1,22 @@
+/*=====================
+	2.6.1 Data Protection
+=======================*/
+.data-protection {
+	@include xy-grid;
+	font-family: $capitalFontFamily;
+	color: $colorGrayLight;
+	font-size: rem-calc(12);
+
+	&__icon {
+		@include xy-cell(4, $gutters:0);
+		height: 20px;
+  	width: 20px;
+  	fill: $colorCallAction;
+	}
+
+	&__text {
+		@include xy-cell(auto);
+		margin: 0;
+		text-align: bottom;
+	} 
+}

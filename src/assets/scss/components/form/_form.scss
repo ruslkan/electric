@@ -1,0 +1,101 @@
+/*==================
+	2.3.0 General Form
+====================*/
+.form {
+	padding: 1rem 2.5rem;;
+	background-color: $formConsultBg;
+	border: 1px solid $colorBlueDark;
+	border-radius: 5px;
+	font-family: $capitalFontFamily;
+
+	&__headline {
+		@include font-bold($weight: 800);
+		@include text-transform(uppercase);
+		border: 1px solid $colorBlueMedium;
+		color: $colorGrayLight;
+		@include breakpoint(small) {
+      font-size: rem-calc(16);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(16);
+    }
+    @include breakpoint(large, xlarge up) {
+      font-size: rem-calc(20);
+    }
+	}
+
+	&__desc {
+		@include font-bold($weight: 800);
+		line-height: 18px;
+		letter-spacing: 0.05em;
+		color: $colorGrayLight;
+		border: 1px solid $colorBlueMedium;
+		padding: 0.3rem 0 0.7rem 0;
+		@include breakpoint(small) {
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(medium) {
+      font-size: rem-calc(12);
+    }
+    @include breakpoint(large, xlarge up) {
+      font-size: rem-calc(14);
+    }
+
+		.text-select {
+			font-size: rem-calc(16);
+			@include text-transform(uppercase);
+		}
+	}
+
+	&__label {
+		color: $colorGrayLight;
+	}
+
+	&__input {
+		background-color: $colorBlueDark;
+		border: 1px solid $colorBlueDark;
+		border-radius: 5px;
+		font-size: rem-calc(18);
+		color: $colorGrayLight;
+
+		&::placeholder {
+			font-size: rem-calc(12);
+			color: $colorGrayMedium;
+		}
+
+		&:focus {
+			background-color: $colorBlueLight;
+			border: 1px solid $colorBlueLight;
+			box-shadow: none;
+		}
+	}
+
+	&__data-protection {
+		@include xy-grid;
+		@include flex-align(center, middle);
+	}
+
+	&__close-button {
+		@include close-button;
+		top: 0;
+		right: 0;
+		padding: 1rem 1.5rem 0 0;
+		color: $colorBlueLight;
+		font-size: rem-calc(38);
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $colorBlueDark;
+		}
+	}
+
+	&__error {
+    font-size: 0.75rem;
+    color: #cc4b37;
+	}
+
+	&__alert-text {
+		color: #CC4B37;
+	}
+}

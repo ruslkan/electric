@@ -1,0 +1,46 @@
+/*======================
+  2.2.0 Contacts widget
+========================*/
+.contacts-widget {
+	@include xy-grid;
+	margin-bottom: 0;
+	font-family: $capitalFontFamily;
+
+	&__icon {
+		@include xy-cell(4, $gutters:0);
+		@include flex-align-self(middle);
+		fill: $colorBlueLight;
+		@include breakpoint(small) {
+			height: 16px;
+  		width: 16px;
+		}
+		@include breakpoint(medium) {
+			height: 22px;
+  		width: 22px;
+		}
+		@include breakpoint(large, xlarge up) {
+			height: 28px;
+  		width: 28px;
+		}
+	}
+
+	&__text,
+	&__list {
+		@include xy-cell(auto);
+		@include flex-align-self(middle);
+		margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.2;
+    color: $colorGrayLight;
+	}
+
+	&__link {
+		color: $colorGrayLight;
+		
+		&:hover,
+		&:focus {
+			color: darken($colorGrayLight, 20%);
+			transition: 0.3s linear;
+		}
+	}
+}

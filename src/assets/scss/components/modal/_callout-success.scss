@@ -1,0 +1,46 @@
+/*===========================
+	2.5.0 Modal Callout Success
+=============================*/
+.callout-success {
+	@include callout-base;
+	margin: 0 auto;
+	background-color: $colorBlueMedium;
+	@include reveal-modal-base;
+	border: none;
+	border-radius: 5px;
+	color: $colorGreenMedium;
+	margin: 0 auto;
+	@include breakpoint(medium) {
+		width: 50%;
+		max-width: 50%;
+	}
+	@include breakpoint(large, xlarge, xxlarge, slarge) {
+		width: 30%;
+		max-width: 30%;
+	}
+	@include breakpoint(sslarge) {
+		width: 20%;
+		max-width: 20%;
+	}
+
+	&__content {
+		padding: 3rem;
+		text-align: center;
+	}
+
+	&__content-inner {
+		padding: 0.5rem;
+		@include bordered(
+			$width: 1px,
+			$type: solid,
+			$color: $colorBlueLight);
+	}
+
+	&__headline {
+		font-size: rem-calc(24);
+	}
+
+	&__text {
+		font-size: rem-calc(18);
+	}
+}

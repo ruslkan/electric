@@ -1,0 +1,23 @@
+{
+  "nav": [
+  {
+    "link": "#services",
+    "text": "Услуги"
+  },
+  {
+    "link": "#advantages",
+    "text": "Преимущества"
+  },
+  {
+    "link": "#workingProcess",
+    "text": "Как заказать"
+  },
+  {
+    "link": "#action",
+    "text": "Акция"
+  },
+  {
+    "link": "#testimonial",
+    "text": "Отзывы"
+  }]
+}

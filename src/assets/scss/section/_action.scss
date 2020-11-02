@@ -1,0 +1,86 @@
+/*========================
+  3.0.4 Section Advantages
+==========================*/
+.action {
+	background-image: url('../img/section/action/action-bg.jpg');
+
+	&__headline {
+		&::after {
+			border-bottom: none;
+		}
+	}
+
+	&__subheadline {
+		color: $colorCallAction;
+		font-size: rem-calc(34);
+		padding-top: 1rem;
+	}
+
+	&__offer {
+		@include xy-cell;
+		font-family: $capitalFontFamily;
+		color: $colorBlueMedium;
+		font-size: rem-calc(20);
+		@include font-bold($weight: 900);
+		padding: 2rem 0;
+		text-align: center;
+	}
+
+	&__text-select {
+		color: $colorCallAction;
+		@include text-transform(uppercase);
+		@include text-decoration(
+			$decoration: underline);
+	}
+
+	&__discount {
+		text-align: center;
+	}
+
+	&__discount-item {
+		color: $colorBlueMedium;
+		@include font-bold($weight: 700);
+		font-size: rem-calc(24);
+		padding-bottom: 2rem; 
+	}
+
+	&__discount-item-percent {
+		@include font-bold($weight: 900);
+		border-radius: 50%;	
+  	background-color: $colorCallAction;
+  	padding: 1rem 0.5rem;
+	}
+
+	&__content {
+		padding: 2.8rem 0;
+	}
+
+	&__cta-headline {
+		@include font-bold($weight: 900);
+		color: $colorBlueDark;
+	}
+
+	&__cta-text {
+		@include font-bold($weight: 900);
+		color: $colorBlueDark;
+	}
+
+	&__note {
+		font-family: $sectionDescFontFamily;
+		text-align: center;
+		font-size: rem-calc(14);
+		padding-bottom: 0.5rem;
+	}
+
+	&__data-protection {
+		@include xy-grid;
+		@include flex-align(
+			$x: center,
+			$y: stretch);
+		padding-bottom: 0.5rem;
+	}
+
+	&__data-protection-text {
+		color: $colorBlueDark;
+	}
+}

@@ -1,0 +1,9 @@
+<nav class="main-nav">
+  <ul class="main-nav__list" data-magellan>
+    {{#each menu.nav}}
+    <li class="main-nav__item">
+      <a href="{{ link }}" class="main-nav__link">{{ text }}</a>
+    </li>
+    {{/each}}
+  </ul>
+</nav>

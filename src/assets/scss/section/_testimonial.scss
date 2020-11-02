@@ -1,0 +1,82 @@
+/*=========================
+  3.0.5 Section Testimonial
+===========================*/
+.testimonial {
+	background-image: url('../img/section/testimonial/testimonial-bg.jpg');
+
+	&__testimonial-card {
+		padding: 2.5rem 0 0.5rem 0;
+		
+		.slick-slide {
+			padding: 0 0.5rem;
+		}
+	}
+
+	&__dots {
+		padding: 1rem 0;
+    @include show-for(large);
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+
+      button {
+        border: 0;
+        background: transparent;
+        outline: none;
+        line-height: 0px;
+        font-size: 0px;
+        color: transparent;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          outline: none;
+
+          &:before {
+            opacity: $slick-opacity-on-hover;
+          }
+        }
+
+        &:before {
+          content: $slick-dot-character;
+          width: 20px;
+          height: 20px;
+          font-family: $slick-font-family;
+          font-size: $slick-dot-size;
+          line-height: 20px;
+          text-align: center;
+          color: $slick-dot-color;
+          opacity: $slick-opacity-not-active;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+
+      &.slick-active button:before {
+        color: $slick-dot-color-active;
+        opacity: $slick-opacity-default;
+      }
+    }
+  }
+}
+
+// Author card
+.avatar {
+  @include xy-grid;
+  @include flex-align(center, middle);
+	font-size: rem-calc(14);
+	width: 150px;
+
+	&__image {
+    @include thumbnail;
+    border-radius: 50%;
+	}
+
+	&__info {
+		text-align: center;
+	}
+}

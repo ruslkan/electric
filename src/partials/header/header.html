@@ -1,0 +1,49 @@
+<header class="page__header header">
+  <!-- Begin hero -->
+  {{> hero}}
+  <!-- End hero -->
+  <div class="header__content-container">
+    <div class="page__container">
+      <!-- Begin trigger button main navigation -->
+      <div class="header__trigger-area">
+        <div class="header__trigger">
+          <button class="header__trigger-icon menu-icon" type="button" data-open="mainNav"></button>
+        </div>
+      </div>
+      <!-- End trigger button main navigation -->
+      <!-- Begin header content -->
+      <div class="header__content">
+        <div class="header__headline">
+          <div class="offer">
+            <span class="offer__desc">Нужен электромонтаж?</span>
+            <h1 class="offer__title">Комплексный<br>
+              <span class="highlighted">электромонтаж</span><br>любой сложности
+            </h1>
+          </div>
+          <div class="header__privilege">
+            <div class="privilege">
+              <ul class="privilege__list">
+                <li class="privilege__item">Ответственность за
+                  <span class="highlighted">качество</span>&nbspработ
+                </li>
+                <li class="privilege__item">Соблюдение норм
+                  <span class="highlighted">ГОСТ</span>ов&nbspи
+                  <span class="highlighted">ТКП</span>
+                </li>
+                <li class="privilege__item">Гарантия на монтаж до
+                  <span class="highlighted">5 лет</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Begin form back to call -->
+        <div class="header__form">
+          {{> form}}
+        </div>
+        <!-- End form back to call -->
+      </div>
+      <!-- End header content -->
+    </div>
+  </div>
+</header>

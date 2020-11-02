@@ -1,0 +1,33 @@
+<div id="formBackCall" class="back-call" data-reveal data-show-delay>
+  <form class="form" data-abide novalidate>
+    <div data-abide-error class="form__callout alert" style="display: none;">
+      <p class="form__alert-text"><i class="fi-alert"></i> В вашей форме есть некоторые ошибки!</p>
+    </div>
+    <div class="form__headline">Заполните<br>форму</div>
+    <div class="form__desc">и Вам перезвонят в<br> течение 30-45 минут</div>
+    <label class="form__label">Имя*
+      <input type="text" class="form__input" placeholder="Александр" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="text">
+      <span class="form-error form__error">
+        Эй, тебе лучше заполнить это, это обязательно.
+      </span>
+    </label>
+    <label class="form__label">Номер телефона*
+      <input type="tel" class="form__input" placeholder="+375 (код) 1112233" aria-describedby="example2Hint2" aria-errormessage="example2Error2" required pattern="number">
+      <span class="form-error form__error">
+        Эй, тебе лучше заполнить это, это обязательно.
+      </span>
+    </label>
+    <button type="submit" class="button expanded button-cta">Заказать звонок</button>
+    <div class="form__data-protection">
+      <div class="data-protection">
+        <svg class="data-protection__icon">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#lock"></use>
+        </svg>
+        <span class="data-protection__text">Гарантия защиты данных</span>
+      </div>
+    </div>
+  </form>
+  <button class="form__close-button" data-close aria-label="Close back call" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

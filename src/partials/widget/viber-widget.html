@@ -1,0 +1,12 @@
+<div class="contacts-widget">
+  <svg class="contacts-widget__icon">
+    <use xlink:href="{{root}}assets/img/sprite/icon.svg#viber"></use>
+  </svg>
+  <ul class="contacts-widget__list">
+    {{#each contacts.viber}}
+    <li class="contacts-widget__item">
+      <a class="contacts-widget__link" href="viber://chat?number={{ this }}">{{ this }}</a>
+    </li>
+    {{/each}}
+  </ul>
+</div>

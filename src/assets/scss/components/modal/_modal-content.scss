@@ -1,0 +1,166 @@
+/*====================
+	2.5.2 Modal Content
+======================*/
+.modal-content {
+	@include reveal-overlay(
+		$background: $colorBlueMedium);
+	height: max-content;
+	@include reveal-modal-base;
+	border: none;
+	border-radius: 5px;
+	color: $colorGrayLight;
+	margin: 0 auto;
+	@include breakpoint(medium) {
+		width: 90%;
+		max-width: 90%;
+	}
+	@include breakpoint(large, xlarge, xxlarge, slarge) {
+		width: 60%;
+		max-width: 60%;
+	}
+	@include breakpoint(sslarge) {
+		width: 30%;
+		max-width: 30%;
+	}
+
+	&__top-container {
+		@include xy-grid-container;
+		@include xy-gutters(
+			$gutters: 2rem,
+			$gutter-type: padding,
+			$gutter-position: (top, bottom));
+		@include xy-grid;
+	}
+
+	&__logo {
+		@include xy-grid;
+		@include breakpoint(small) {
+			@include flex-align(center, middle);
+			@include xy-cell(12);
+			padding-bottom: 0.5rem;
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(4);
+			padding-bottom: 0;
+		}
+		@include breakpoint(large) {
+			@include xy-cell(4);
+			padding-bottom: 0;
+		}
+	}
+
+	&__headline {
+		@include flex-align-self(middle);
+		text-align: right;
+		font-size: rem-calc(26);
+		@include font-bold(
+			$weight: 600);
+		font-family: $capitalFontFamily;
+		@include breakpoint(small) {
+			@include xy-cell(12);
+			text-align: center;
+			padding-top: 0.5rem;
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(8);
+			padding-top: 0;
+		}
+		@include breakpoint(large) {
+			@include xy-cell(8);
+			padding-top: 0;
+		}
+	}
+
+	&__tabs-container {
+		@include xy-grid-container;
+		@include xy-gutters(
+			$gutters: 2rem,
+			$gutter-type: padding,
+			$gutter-position: (top, bottom));
+	}
+
+	&__tabs {
+		@include tabs-container;
+		@include xy-grid;
+		border: 1px solid $colorBlueLight;
+		background: none;
+		font-family: $capitalFontFamily;
+	}
+
+	&__tabs-title {
+		@include tabs-title;
+		@include font-bold(
+			$weight: 600);
+		background: none;
+		@include xy-cell(6, $gutters: 0);
+		text-align: center;
+
+		&>a {
+			font-size: rem-calc(18);
+			@include font-bold(
+			$weight: 600);
+			color: $colorGrayLight;
+
+			&:active,
+			&:focus,
+			&:hover {
+				background: $colorBlueLight;
+			}
+		}
+
+		&.is-active>a {
+			color: $colorCallAction;
+			background: $colorBlueLight;
+		}
+	}
+
+	&__tabs-content {
+		@include tabs-content;
+		color: $colorGrayLight;
+		border: 1px solid $colorBlueLight;
+		background: none;
+	}
+
+	&__tabs-panel {
+		@include tabs-panel;
+	}
+
+	&__tabs-panel-list {
+		margin-bottom: 0;
+	}
+
+	&__tabs-panel-item {
+		margin-top: 0.1rem;
+		letter-spacing: 0.03em;
+	}
+
+	// No Tab
+	&__container {
+		@include xy-grid-container;
+		@include xy-gutters(
+			$gutters: 2rem,
+			$gutter-type: padding,
+			$gutter-position: (top, bottom));
+	}
+
+	&__content {
+		color: $colorGrayLight;
+		border: 1px solid $colorBlueLight;
+		background: none;
+	}
+
+	&__list {
+		padding: 1rem;
+		margin-bottom: 0;
+	}
+
+	&__item {
+		margin-top: 0.5rem;
+		letter-spacing: 0.03em;
+	}
+
+	&__button {
+		@include flex;
+  	@include flex-align(center, middle);
+	}
+}

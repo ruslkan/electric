@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	<symbol id="line" viewBox="0 0 795 11">
+		<line x1="0.941406" y1="5.28784" x2="794.05" y2="5.28784" />
+	</symbol>
+	<symbol id="lineRound" viewBox="0 0 36 36">
+		<path d="M11.4809 315.851C96.8498 288.149 238.202 130.649 3.0498 4.71887" stroke-linejoin="round"/>
+	</symbol>
+</svg>

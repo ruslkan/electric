@@ -1,0 +1,42 @@
+<div id="modalContentApartment" class="modal-content">
+  <div class="modal-content__top-container">
+    <div class="modal-content__logo">
+      {{> logo}}
+    </div>
+    <h5 class="modal-content__headline">{{ card.headline }}</h5>
+  </div>
+  <!-- Begin Modal Content Tabs -->
+  <div class="modal-content__tabs-container">
+    <ul id="servicesModalContentApartment" class="modal-content__tabs">
+      <li class="modal-content__tabs-title is-active">
+        <a href="#panel1" aria-selected="true">Новостройка</a>
+      </li>
+      <li class="modal-content__tabs-title">
+        <a data-tabs-target="panel2" href="#panel2">Вторичное жилье</a>
+      </li>
+    </ul>
+    <div class="modal-content__tabs-content" data-tabs-content="servicesModalContentApartment">
+      <div id="panel1" class="modal-content__tabs-panel is-active">
+        <ol class="modal-content__tabs-panel-list">
+          {{#each content_new_building}}
+          <li class="modal-content__tabs-panel-item">{{ this }}</li>
+          {{/each}}
+        </ol>
+      </div>
+      <div id="panel2" class="modal-content__tabs-panel">
+        <ol class="modal-content__tabs-panel-list">
+          {{#each content_secondary_housing}}
+          <li class="modal-content__tabs-panel-item">{{ this }}</li>
+          {{/each}}
+        </ol>
+      </div>
+      <div class="modal-content__button">
+        <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Content Tabs -->
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

@@ -1,0 +1,19 @@
+{
+  "slide": [
+  {
+    "image": "assets/img/hero/room.jpg",
+    "caption": "Квартиры"
+  },
+  {
+    "image": "assets/img/hero/kitchen.jpg",
+    "caption": "Загородного дома"
+  },
+  {
+    "image": "assets/img/hero/office.jpg",
+    "caption": "Офиса"
+  },
+  {
+    "image": "assets/img/hero/company.jpg",
+    "caption": "Производства"
+  }]
+}

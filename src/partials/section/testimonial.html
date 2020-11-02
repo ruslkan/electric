@@ -1,0 +1,10 @@
+<section id="testimonial" class="section section__bg testimonial" data-magellan-target="testimonial">
+  <div class="page__container">
+    <h2 class="section__headline">Отзывы</h2>
+    <div id="testimonialCard" class="testimonial__testimonial-card" data-equalizer="testimonialCard">
+      {{#each testimonial.card}}
+      {{> testimonial-card}}
+      {{/each}}
+    </div>
+  </div>
+</section>

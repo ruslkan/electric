@@ -1,0 +1,23 @@
+<div class="services-card">
+  <div class="services-card__image-bg" style="background-image: url({{ card.image }})">
+  </div>
+  <div class="services-card__headline-area">
+    <h5 class="services-card__headline">{{ card.headline }}</h5>
+  </div>
+  <div class="services-card__icon-container">
+    <button type="button" class="services-card__button" data-open="{{ card.link_content }}">
+      <div class="services-card__icon-area">
+        <svg class="services-card__icon">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#checklist"></use>
+        </svg>
+      </div>
+    </button>
+    <button type="button" class="services-card__button" data-open="{{ card.link_photo }}">
+      <div class="services-card__icon-area">
+        <svg class="services-card__icon">
+          <use xlink:href="{{root}}assets/img/sprite/icon.svg#photo"></use>
+        </svg>
+      </div>
+    </button>
+  </div>
+</div>
