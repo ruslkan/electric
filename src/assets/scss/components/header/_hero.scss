@@ -1,5 +1,5 @@
 /*===================
-  2.4.2 Header Hero
+  2.4.1 Header Hero
 =====================*/
 .hero {
   min-width: 100%;
@@ -8,10 +8,10 @@
   height: auto;
   overflow: hidden;
   @include breakpoint(small) {
-    height: $heroHeight*1.25;
+    height: $heroHeight*1.50;
   }
   @include breakpoint(medium) {
-    height: $heroHeight/1.43;
+    height: $heroHeight/1.53;
   }
   @include breakpoint(large, xlarge, xxlarge, slarge) {
      height: $heroHeight;
@@ -22,10 +22,10 @@
 
   &__image-bg {
     @include breakpoint(small) {
-      height: $heroHeight*1.25;
+      height: $heroHeight*1.50;
     }
     @include breakpoint(medium) {
-      height: $heroHeight/1.43;
+      height: $heroHeight/1.53;
     }
     @include breakpoint(large, xlarge, xxlarge, slarge) {
       height: $heroHeight;

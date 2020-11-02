@@ -10,6 +10,12 @@
 	border-radius: 5px;
 	color: $colorGrayLight;
 	margin: 0 auto;
+	@include breakpoint(small) {
+		height: auto;
+		max-height: 100%;
+		width: 100%;
+		max-width: 100%;
+	}
 	@include breakpoint(medium) {
 		width: 90%;
 		max-width: 90%;

@@ -1,6 +1,7 @@
 ### Introduction
 
 This is the layout of a landing page for an electrician. With adaptation to mobile screens.
+Demo: https://ruslkan.github.io/electric/
 Based on ZURB Foundation Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
