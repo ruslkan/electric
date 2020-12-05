@@ -32,12 +32,23 @@
       "Сборка и монтаж слаботочного щита.",
       "Пуско-наладочные работы."
     ],
-    "photo": [
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png"
+    "gallery": [
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-1.png",
+        "image_name": "Название фото"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-2.png",
+        "image_name": "Название фото-1"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-3.png",
+        "image_name": "Название фото-2"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-4.png",
+        "image_name": "Название фото-3"
+      }
     ]
   }],
   "country_house": [
@@ -81,12 +92,23 @@
       "Монтаж системы заземления.",
       "Пуско-наладочные работы."
     ],
-    "photo": [
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png"
+    "gallery": [
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-1.png",
+        "image_name": "Название фото"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-2.png",
+        "image_name": "Название фото-1"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-3.png",
+        "image_name": "Название фото-2"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-4.png",
+        "image_name": "Название фото-3"
+      }
     ]
   }],
   "office": [
@@ -114,12 +136,23 @@
       "Монтаж стабилизаторов напряжения (по необходимости).",
       "Пуско-наладочные работы."
     ],
-    "photo": [
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png"
+    "gallery": [
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-1.png",
+        "image_name": "Название фото"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-2.png",
+        "image_name": "Название фото-1"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-3.png",
+        "image_name": "Название фото-2"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-4.png",
+        "image_name": "Название фото-3"
+      }
     ]
   }],
   "manufacturing": [
@@ -145,12 +178,23 @@
       "Монтаж сигнализации, камер видеонаблюдения, домофонов, СКУД и т. д.",
       "Пуско-наладочные работы."
     ],
-    "photo": [
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png",
-      "assets/img/section/services/modal/placeholder_640x360.png"
+    "gallery": [
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-1.png",
+        "image_name": "Название фото"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-2.png",
+        "image_name": "Название фото-1"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-3.png",
+        "image_name": "Название фото-2"
+      },
+      {
+        "image": "assets/img/section/services/modal/placeholder_1200_600-4.png",
+        "image_name": "Название фото-3"
+      }
     ]
   }]
 }

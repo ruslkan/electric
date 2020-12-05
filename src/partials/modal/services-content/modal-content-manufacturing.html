@@ -1,24 +1,26 @@
-<div id="modalContentManufacturing" class="modal-content">
-  <div class="modal-content__top-container">
-    <div class="modal-content__logo">
+<div id="modalContentManufacturing" class="modal">
+  <!-- Begin modal logo and headline -->
+  <div class="modal__top-container">
+    <div class="modal__logo">
       {{> logo}}
     </div>
-    <h5 class="modal-content__headline">{{ card.headline }}</h5>
+    <h5 class="modal__headline">{{ card.headline }}</h5>
   </div>
-  <!-- Begin Modal Content -->
-  <div class="modal-content__container">
-    <div class="modal-content__content">
-      <ol class="modal-content__list">
+  <!-- End modal logo and headline -->
+  <!-- Begin modal content -->
+  <div class="modal__container">
+    <div class="modal__content">
+      <ol class="modal__list">
         {{#each content}}
-        <li class="modal-content__item">{{ this }}</li>
+        <li class="modal__item">{{ this }}</li>
         {{/each}}
       </ol>
-      <div class="modal-content__button">
+      <div class="modal__button">
         <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
       </div>
     </div>
   </div>
-  <!-- End Modal Content -->
+  <!-- End modal content -->
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>

@@ -50,7 +50,7 @@
     color: $colorBlueLight;
     @include font-bold($weight: 800);
     @include breakpoint(small) {
-      margin-top: rem-calc(-170);
+      margin-top: rem-calc(-250);
       margin-left: 20px;
       font-size: rem-calc(26);
     }

@@ -72,108 +72,120 @@ $('#testimonialCard').slick({
   ]
 });
 
-//===== Modal Content ========//
-//============================//
+// ================================== //
+// ===== Modal Content
+// ================================== //
+
 // Section Services Modal Content Apartment
 var modalContentApartment = new Foundation.Reveal($('#modalContentApartment'), {
     showDelay: 450,
     closeOnClick: false,
-    vOffset: 50
+    vOffset: 100
 });
 
 var servicesModalContentApartment = new Foundation.Tabs($('#servicesModalContentApartment'), {
-    linkClass: 'modal-content__tabs-title',
-    panelClass: 'modal-content__tabs-panel'
+    linkClass: 'modal__tabs-title',
+    panelClass: 'modal__tabs-panel'
 });
 
 // Section Services Modal Content Country House
 var modalContentCountryHouse = new Foundation.Reveal($('#modalContentCountryHouse'), {
     showDelay: 450,
     closeOnClick: false,
-    vOffset: 50
+    vOffset: 5
 });
 
 var servicesModalContentCountryHouse = new Foundation.Tabs($('#servicesModalContentCountryHouse'), {
-    linkClass: 'modal-content__tabs-title',
-    panelClass: 'modal-content__tabs-panel'
+    linkClass: 'modal__tabs-title',
+    panelClass: 'modal__tabs-panel'
 });
 
 // Section Services Modal Content Office
 var modalContentOffice = new Foundation.Reveal($('#modalContentOffice'), {
     showDelay: 450,
     closeOnClick: false,
-    vOffset: 50
+    vOffset: 5
 });
 
 // Section Services Modal Content Manufacturing
 var modalContentManufacturing = new Foundation.Reveal($('#modalContentManufacturing'), {
     showDelay: 450,
     closeOnClick: false,
-    vOffset: 50
+    vOffset: 5
 });
 
-//===== Modal Photo Gallery ========//
-//==================================//
-// Section Services Modal Photo Apartment
+// ================================== //
+// ===== Modal Photo Gallery
+// ================================== //
+
+// Section services modal photo apartment
 var modalPhotoApartment = new Foundation.Reveal($('#modalPhotoApartment'), {
-    showDelay: 450,
-    closeOnClick: false,
-    vOffset: 50
+  closeOnClick: false
 });
 
-// Section Services Gallery Photo Apartment
-var servicesPhotoApartment = new Foundation.Orbit($('#servicesPhotoApartment'), {
-  autoPlay: false,
-  containerClass: 'modal-photo__gallery-photos',
-  slideClass: 'modal-photo__gallery-photos-item',
-  prevClass: 'modal-photo__gallery-previous',
-  nextClass: 'modal-photo__gallery-next'
+$(document).on('open.zf.reveal', '#modalPhotoApartment', function () {
+  $('#modalGallery', this).slick({
+    arrows: true,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    cssEase: 'linear',
+    mobileFirst: true
+  });
+}).on('close.zf.reveal', '#modalPhotoApartment', function () {
+  $('#modalGallery', this).slick('unslick');
 });
 
-// Section Services Modal Photo Country House
+// Section services modal photo country house
 var modalPhotoCountryHouse = new Foundation.Reveal($('#modalPhotoCountryHouse'), {
-    showDelay: 450,
-    closeOnClick: false,
-    vOffset: 50
+  closeOnClick: false
 });
 
-// Section Services Gallery Photo Country House
-var servicesPhotoCountryHouse = new Foundation.Orbit($('#servicesPhotoCountryHouse'), {
-  autoPlay: false,
-  containerClass: 'modal-photo__gallery-photos',
-  slideClass: 'modal-photo__gallery-photos-item',
-  prevClass: 'modal-photo__gallery-previous',
-  nextClass: 'modal-photo__gallery-next'
+$(document).on('open.zf.reveal', '#modalPhotoCountryHouse', function () {
+  $('#modalGallery', this).slick({
+    arrows: true,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    cssEase: 'linear',
+    mobileFirst: true
+  });
+}).on('close.zf.reveal', '#modalPhotoCountryHouse', function () {
+  $('#modalGallery', this).slick('unslick');
 });
 
-// Section Services Modal Photo Office
+// Section services modal photo office
 var modalPhotoOffice = new Foundation.Reveal($('#modalPhotoOffice'), {
-    showDelay: 450,
-    closeOnClick: false,
-    vOffset: 50
+  closeOnClick: false
 });
 
-// Section Services Gallery Photo Office
-var servicesPhotoOffice = new Foundation.Orbit($('#servicesPhotoOffice'), {
-  autoPlay: false,
-  containerClass: 'modal-photo__gallery-photos',
-  slideClass: 'modal-photo__gallery-photos-item',
-  prevClass: 'modal-photo__gallery-previous',
-  nextClass: 'modal-photo__gallery-next'
+$(document).on('open.zf.reveal', '#modalPhotoOffice', function () {
+  $('#modalGallery', this).slick({
+    arrows: true,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    cssEase: 'linear',
+    mobileFirst: true
+  });
+}).on('close.zf.reveal', '#modalPhotoOffice', function () {
+  $('#modalGallery', this).slick('unslick');
 });
 
-// Section Services Modal Photo Office
+// Section services modal photo manufacturing
 var modalPhotoManufacturing = new Foundation.Reveal($('#modalPhotoManufacturing'), {
-    showDelay: 450,
-    closeOnClick: false,
-    vOffset: 50
+  closeOnClick: false
 });
 
-// Section Services Gallery Photo Office
-var servicesPhotoManufacturing = new Foundation.Orbit($('#servicesPhotoManufacturing'), {
-  autoPlay: false,
-  containerClass: 'modal-photo__gallery-photos',
-  slideClass: 'modal-photo__gallery-photos-item',
-  prevClass: 'modal-photo__gallery-previous',
-  nextClass: 'modal-photo__gallery-next'
+$(document).on('open.zf.reveal', '#modalPhotoManufacturing', function () {
+  $('#modalGallery', this).slick({
+    arrows: true,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    cssEase: 'linear',
+    mobileFirst: true
+  });
+}).on('close.zf.reveal', '#modalPhotoManufacturing', function () {
+  $('#modalGallery', this).slick('unslick');
 });

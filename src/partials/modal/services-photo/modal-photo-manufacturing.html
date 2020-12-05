@@ -1,27 +1,24 @@
-<div id="modalPhotoManufacturing" class="modal-photo">
-  <div class="modal-photo__top-container">
-    <div class="modal-photo__logo">
+<div id="modalPhotoManufacturing" class="modal">
+  <!-- Begin modal logo and headline -->
+  <div class="modal__top-container">
+    <div class="modal__logo">
       {{> logo}}
     </div>
-    <h5 class="modal-photo__headline">{{ card.headline }}</h5>
+    <h5 class="modal__headline">{{ card.headline }}</h5>
   </div>
-  <!-- Begin Modal Photo Gallery Image and Photo -->
-  <div id="servicesPhotoManufacturing" class="modal-photo__gallery">
-    <button class="modal-photo__gallery-previous">
-      <span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;
-    </button>
-    <button class="modal-photo__gallery-next">
-      <span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;
-    </button>
-    <ul class="modal-photo__gallery-photos">
-      {{#each photo}}
-      <li class="modal-photo__gallery-photos-item is-active">
-        <img class="modal-photo__gallery-photos-image" src="{{ this }}" alt="Электромонтаж в квартире">
-      </li>
-      {{/each}}
-    </ul>
+  <!-- End modal logo and headline -->
+  <!-- Begin modal photo gallery -->
+  <div id="modalGallery" class="modal__gallery gallery">
+    {{#each gallery}}
+    <div>
+      <figure class="gallery__figure">
+        <img class="gallery__image" src="{{ image }}" alt="{{ image_name }}">
+        <figcaption class="gallery__figcaption">{{ image_name }}</figcaption>
+      </figure>
+    </div>
+    {{/each}}
   </div>
-  <!-- End Modal Photo Gallery Image and Photo -->
+  <!-- End modal photo gallery -->
   <button class="close-button" aria-label="Close modal" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
