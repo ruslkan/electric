@@ -901,347 +901,367 @@
     </button>
   </div><!-- End Modal Form Back Call -->
   <!-- Begin Modal Services Content -->
-  	<div id="modalContentApartment" class="modal-content">
-  	  <div class="modal-content__top-container">
-  	    <div class="modal-content__logo">
+  	<div id="modalContentApartment" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-content__headline">Электромонтажные работы в квартире</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в квартире</h5>
   	  </div>
-  	  <!-- Begin Modal Content Tabs -->
-  	  <div class="modal-content__tabs-container">
-  	    <ul id="servicesModalContentApartment" class="modal-content__tabs">
-  	      <li class="modal-content__tabs-title is-active">
+  	  <!-- End modal logo and headline --> 
+  	  <!-- Begin modal content tabs -->
+  	  <div class="modal__tabs-container">
+  	    <ul id="servicesModalContentApartment" class="modal__tabs">
+  	      <li class="modal__tabs-title is-active">
   	        <a href="#panel1" aria-selected="true">Новостройка</a>
   	      </li>
-  	      <li class="modal-content__tabs-title">
+  	      <li class="modal__tabs-title">
   	        <a data-tabs-target="panel2" href="#panel2">Вторичное жилье</a>
   	      </li>
   	    </ul>
-  	    <div class="modal-content__tabs-content" data-tabs-content="servicesModalContentApartment">
-  	      <div id="panel1" class="modal-content__tabs-panel is-active">
-  	        <ol class="modal-content__tabs-panel-list">
-  	          <li class="modal-content__tabs-panel-item">Монтаж электропроводки: скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж слаботочной системы: ТВ-кабель, UTP.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж розеток и выключателей.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж теплого пола.</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
-  	          <li class="modal-content__tabs-panel-item">Пуско-наладочные работы.</li>
+  	    <div class="modal__tabs-content" data-tabs-content="servicesModalContentApartment">
+  	      <div id="panel1" class="modal__tabs-panel is-active">
+  	        <ol class="modal__tabs-panel-list">
+  	          <li class="modal__tabs-panel-item">Монтаж электропроводки: скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж слаботочной системы: ТВ-кабель, UTP.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж розеток и выключателей.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж теплого пола.</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
+  	          <li class="modal__tabs-panel-item">Пуско-наладочные работы.</li>
   	        </ol>
   	      </div>
-  	      <div id="panel2" class="modal-content__tabs-panel">
-  	        <ol class="modal-content__tabs-panel-list">
-  	          <li class="modal-content__tabs-panel-item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж электропроводки.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж старого счетчика электроэнергии.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж розеток и выключателей.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж теплого пола.</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
-  	          <li class="modal-content__tabs-panel-item">Пуско-наладочные работы.</li>
+  	      <div id="panel2" class="modal__tabs-panel">
+  	        <ol class="modal__tabs-panel-list">
+  	          <li class="modal__tabs-panel-item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж электропроводки.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж старого счетчика электроэнергии.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
+  	          <li class="modal__tabs-panel-item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
+  	          <li class="modal__tabs-panel-item">Монтаж розеток и выключателей.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж теплого пола.</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
+  	          <li class="modal__tabs-panel-item">Пуско-наладочные работы.</li>
   	        </ol>
   	      </div>
-  	      <div class="modal-content__button">
+  	      <div class="modal__button">
   	        <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
   	      </div>
   	    </div>
   	  </div>
-  	  <!-- End Modal Content Tabs -->
+  	  <!-- End modal content tabs -->
   	  <button class="close-button" data-close aria-label="Close modal" type="button">
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalContentCountryHouse" class="modal-content">
-  	  <div class="modal-content__top-container">
-  	    <div class="modal-content__logo">
+  	</div>	<div id="modalContentCountryHouse" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-content__headline">Электромонтажные работы в загородном доме</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в загородном доме</h5>
   	  </div>
-  	  <!-- Begin Modal Content Tabs -->
-  	  <div class="modal-content__tabs-container">
-  	    <ul id="servicesModalContentCountryHouse" class="modal-content__tabs">
-  	      <li class="modal-content__tabs-title is-active">
+  	   <!-- End modal logo and headline -->
+  	  <!-- Begin modal content tabs -->
+  	  <div class="modal__tabs-container">
+  	    <ul id="servicesModalContentCountryHouse" class="modal__tabs">
+  	      <li class="modal__tabs-title is-active">
   	        <a href="#panel3" aria-selected="true">Новостройка</a>
   	      </li>
-  	      <li class="modal-content__tabs-title">
+  	      <li class="modal__tabs-title">
   	        <a data-tabs-target="panel4" href="#panel4">Вторичное жилье</a>
   	      </li>
   	    </ul>
-  	    <div class="modal-content__tabs-content" data-tabs-content="servicesModalContentCountryHouse">
-  	      <div id="panel3" class="modal-content__tabs-panel is-active">
-  	        <ol class="modal-content__tabs-panel-list">
-  	          <li class="modal-content__tabs-panel-item">Монтаж электропроводки: скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж слаботочной системы: ТВ-кабель, UTP.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж розеток и выключателей.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж теплого пола.</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж стабилизаторов напряжения (по необходимости).</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж системы заземления.</li>
-  	          <li class="modal-content__tabs-panel-item">Подбор, монтаж и подключение резервных источников электроснабжения.</li>
-  	          <li class="modal-content__tabs-panel-item">Пуско-наладочные работы.</li>
+  	    <div class="modal__tabs-content" data-tabs-content="servicesModalContentCountryHouse">
+  	      <div id="panel3" class="modal__tabs-panel is-active">
+  	        <ol class="modal__tabs-panel-list">
+  	          <li class="modal__tabs-panel-item">Монтаж электропроводки: скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж слаботочной системы: ТВ-кабель, UTP.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж розеток и выключателей.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж теплого пола.</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж стабилизаторов напряжения (по необходимости).</li>
+  	          <li class="modal__tabs-panel-item">Монтаж системы заземления.</li>
+  	          <li class="modal__tabs-panel-item">Подбор, монтаж и подключение резервных источников электроснабжения.</li>
+  	          <li class="modal__tabs-panel-item">Пуско-наладочные работы.</li>
   	        </ol>
   	      </div>
-  	      <div id="panel4" class="modal-content__tabs-panel">
-  	        <ol class="modal-content__tabs-panel-list">
-  	          <li class="modal-content__tabs-panel-item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж электропроводки.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Демонтаж старого счетчика электроэнергии.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж розеток и выключателей.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж теплого пола.</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	          <li class="modal-content__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж стабилизаторов напряжения (по необходимости).</li>
-  	          <li class="modal-content__tabs-panel-item">Подбор, монтаж и подключение резервных источников электроснабжения</li>
-  	          <li class="modal-content__tabs-panel-item">Монтаж системы заземления.</li>
-  	          <li class="modal-content__tabs-panel-item">Пуско-наладочные работы.</li>
+  	      <div id="panel4" class="modal__tabs-panel">
+  	        <ol class="modal__tabs-panel-list">
+  	          <li class="modal__tabs-panel-item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж электропроводки.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Демонтаж старого счетчика электроэнергии.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
+  	          <li class="modal__tabs-panel-item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
+  	          <li class="modal__tabs-panel-item">Монтаж розеток и выключателей.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж светильников, люстр, бра и т.д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж теплого пола.</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	          <li class="modal__tabs-panel-item">Сборка и монтаж слаботочного щита.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
+  	          <li class="modal__tabs-panel-item">Монтаж стабилизаторов напряжения (по необходимости).</li>
+  	          <li class="modal__tabs-panel-item">Подбор, монтаж и подключение резервных источников электроснабжения</li>
+  	          <li class="modal__tabs-panel-item">Монтаж системы заземления.</li>
+  	          <li class="modal__tabs-panel-item">Пуско-наладочные работы.</li>
   	        </ol>
   	      </div>
-  	      <div class="modal-content__button">
+  	      <div class="modal__button">
   	        <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
   	      </div>
   	    </div>
   	  </div>
-  	  <!-- End Modal Content Tabs -->
+  	  <!-- End modal content tabs -->
   	  <button class="close-button" data-close aria-label="Close modal" type="button">
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalContentOffice" class="modal-content">
-  	  <div class="modal-content__top-container">
-  	    <div class="modal-content__logo">
+  	</div>	<div id="modalContentOffice" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-content__headline">Электромонтажные работы в офисе</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в офисе</h5>
   	  </div>
-  	  <!-- Begin Modal Content -->
-  	  <div class="modal-content__container">
-  	    <div class="modal-content__content">
-  	      <ol class="modal-content__list">
-  	        <li class="modal-content__item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
-  	        <li class="modal-content__item">Демонтаж электропроводки.</li>
-  	        <li class="modal-content__item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
-  	        <li class="modal-content__item">Демонтаж старого счетчика электроэнергии.</li>
-  	        <li class="modal-content__item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
-  	        <li class="modal-content__item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
-  	        <li class="modal-content__item">Монтаж розеток и выключателей.</li>
-  	        <li class="modal-content__item">Монтаж светильников, люстр, бра и т.д.</li>
-  	        <li class="modal-content__item">Монтаж теплого пола.</li>
-  	        <li class="modal-content__item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	        <li class="modal-content__item">Сборка и монтаж слаботочного щита.</li>
-  	        <li class="modal-content__item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
-  	        <li class="modal-content__item">Монтаж стабилизаторов напряжения (по необходимости).</li>
-  	        <li class="modal-content__item">Пуско-наладочные работы.</li>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal content -->
+  	  <div class="modal__container">
+  	    <div class="modal__content">
+  	      <ol class="modal__list">
+  	        <li class="modal__item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
+  	        <li class="modal__item">Демонтаж электропроводки.</li>
+  	        <li class="modal__item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
+  	        <li class="modal__item">Демонтаж старого счетчика электроэнергии.</li>
+  	        <li class="modal__item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
+  	        <li class="modal__item">Монтаж слаботочной системы (ТВ-кабель, UTP).</li>
+  	        <li class="modal__item">Монтаж розеток и выключателей.</li>
+  	        <li class="modal__item">Монтаж светильников, люстр, бра и т.д.</li>
+  	        <li class="modal__item">Монтаж теплого пола.</li>
+  	        <li class="modal__item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	        <li class="modal__item">Сборка и монтаж слаботочного щита.</li>
+  	        <li class="modal__item">Монтаж сигнализации, камер видеонаблюдения, домофонов и т. д.</li>
+  	        <li class="modal__item">Монтаж стабилизаторов напряжения (по необходимости).</li>
+  	        <li class="modal__item">Пуско-наладочные работы.</li>
   	      </ol>
-  	      <div class="modal-content__button">
+  	      <div class="modal__button">
   	        <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
   	      </div>
   	    </div>
   	  </div>
-  	  <!-- End Modal Content -->
+  	  <!-- End modal content -->
   	  <button class="close-button" data-close aria-label="Close modal" type="button">
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalContentManufacturing" class="modal-content">
-  	  <div class="modal-content__top-container">
-  	    <div class="modal-content__logo">
+  	</div>	<div id="modalContentManufacturing" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-content__headline">Электромонтажные работы на производстве</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы на производстве</h5>
   	  </div>
-  	  <!-- Begin Modal Content -->
-  	  <div class="modal-content__container">
-  	    <div class="modal-content__content">
-  	      <ol class="modal-content__list">
-  	        <li class="modal-content__item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
-  	        <li class="modal-content__item">Демонтаж электропроводки.</li>
-  	        <li class="modal-content__item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
-  	        <li class="modal-content__item">Демонтаж старого счетчика электроэнергии.</li>
-  	        <li class="modal-content__item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
-  	        <li class="modal-content__item">Монтаж кабель-каналов.</li>
-  	        <li class="modal-content__item">Монтаж розеток и выключателей.</li>
-  	        <li class="modal-content__item">Монтаж освещения.</li>
-  	        <li class="modal-content__item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
-  	        <li class="modal-content__item">Сборка и монтаж слаботочного щита.</li>
-  	        <li class="modal-content__item">Монтаж сигнализации, камер видеонаблюдения, домофонов, СКУД и т. д.</li>
-  	        <li class="modal-content__item">Пуско-наладочные работы.</li>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal content -->
+  	  <div class="modal__container">
+  	    <div class="modal__content">
+  	      <ol class="modal__list">
+  	        <li class="modal__item">Демонтаж розеток, выключателей, светотехнических устройств, распределительных коробок.</li>
+  	        <li class="modal__item">Демонтаж электропроводки.</li>
+  	        <li class="modal__item">Демонтаж автоматических выключателей, УЗО и т.д.</li>
+  	        <li class="modal__item">Демонтаж старого счетчика электроэнергии.</li>
+  	        <li class="modal__item">Монтаж электропроводки (скрыто/открыто, в лотках, в гофре или трубе, под &#x27;ретро&#x27;).</li>
+  	        <li class="modal__item">Монтаж кабель-каналов.</li>
+  	        <li class="modal__item">Монтаж розеток и выключателей.</li>
+  	        <li class="modal__item">Монтаж освещения.</li>
+  	        <li class="modal__item">Сборка и монтаж электрощита (установка линейных автоматов и устройств защитного отключения (УЗО).</li>
+  	        <li class="modal__item">Сборка и монтаж слаботочного щита.</li>
+  	        <li class="modal__item">Монтаж сигнализации, камер видеонаблюдения, домофонов, СКУД и т. д.</li>
+  	        <li class="modal__item">Пуско-наладочные работы.</li>
   	      </ol>
-  	      <div class="modal-content__button">
+  	      <div class="modal__button">
   	        <button type="submit" class="button button-cta" data-open="formBackCall">Получить консультацию</button>
   	      </div>
   	    </div>
   	  </div>
-  	  <!-- End Modal Content -->
+  	  <!-- End modal content -->
   	  <button class="close-button" data-close aria-label="Close modal" type="button">
   	    <span aria-hidden="true">&times;</span>
   	  </button>
   	</div><!-- End Modal Services Content -->
   <!-- Begin Modal Services Photo -->
-  	<div id="modalPhotoApartment" class="modal-photo">
-  	  <div class="modal-photo__top-container">
-  	    <div class="modal-photo__logo">
+  	<div id="modalPhotoApartment" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-photo__headline">Электромонтажные работы в квартире</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в квартире</h5>
   	  </div>
-  	  <!-- Begin Modal Photo Gallery Image and Photo -->
-  	  <div id="servicesPhotoApartment" class="modal-photo__gallery">
-  	    <button class="modal-photo__gallery-previous">
-  	      <span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;
-  	    </button>
-  	    <button class="modal-photo__gallery-next">
-  	      <span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;
-  	    </button>
-  	    <ul class="modal-photo__gallery-photos">
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	    </ul>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal photo gallery -->
+  	  <div id="modalGallery" class="modal__gallery gallery">
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-1.png" alt="Название фото">
+  	        <figcaption class="gallery__figcaption">Название фото</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-2.png" alt="Название фото-1">
+  	        <figcaption class="gallery__figcaption">Название фото-1</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-3.png" alt="Название фото-2">
+  	        <figcaption class="gallery__figcaption">Название фото-2</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-4.png" alt="Название фото-3">
+  	        <figcaption class="gallery__figcaption">Название фото-3</figcaption>
+  	      </figure>
+  	    </div>
   	  </div>
-  	  <!-- End Modal Photo Gallery Image and Photo -->
+  	  <!-- End modal photo gallery -->
   	  <button class="close-button" aria-label="Close modal" type="button" data-close>
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalPhotoCountryHouse" class="modal-photo">
-  	  <div class="modal-photo__top-container">
-  	    <div class="modal-photo__logo">
+  	</div>	<div id="modalPhotoCountryHouse" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-photo__headline">Электромонтажные работы в загородном доме</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в загородном доме</h5>
   	  </div>
-  	  <!-- Begin Modal Photo Gallery Image and Photo -->
-  	  <div id="servicesPhotoCountryHouse" class="modal-photo__gallery">
-  	    <button class="modal-photo__gallery-previous">
-  	      <span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;
-  	    </button>
-  	    <button class="modal-photo__gallery-next">
-  	      <span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;
-  	    </button>
-  	    <ul class="modal-photo__gallery-photos">
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	    </ul>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal photo gallery -->
+  	  <div id="modalGallery" class="modal__gallery gallery">
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-1.png" alt="Название фото">
+  	        <figcaption class="gallery__figcaption">Название фото</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-2.png" alt="Название фото-1">
+  	        <figcaption class="gallery__figcaption">Название фото-1</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-3.png" alt="Название фото-2">
+  	        <figcaption class="gallery__figcaption">Название фото-2</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-4.png" alt="Название фото-3">
+  	        <figcaption class="gallery__figcaption">Название фото-3</figcaption>
+  	      </figure>
+  	    </div>
   	  </div>
-  	  <!-- End Modal Photo Gallery Image and Photo -->
+  	  <!-- End modal photo gallery -->
   	  <button class="close-button" aria-label="Close modal" type="button" data-close>
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalPhotoOffice" class="modal-photo">
-  	  <div class="modal-photo__top-container">
-  	    <div class="modal-photo__logo">
+  	</div>	<div id="modalPhotoOffice" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-photo__headline">Электромонтажные работы в офисе</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы в офисе</h5>
   	  </div>
-  	  <!-- Begin Modal Photo Gallery Image and Photo -->
-  	  <div id="servicesPhotoOffice" class="modal-photo__gallery">
-  	    <button class="modal-photo__gallery-previous">
-  	      <span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;
-  	    </button>
-  	    <button class="modal-photo__gallery-next">
-  	      <span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;
-  	    </button>
-  	    <ul class="modal-photo__gallery-photos">
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	    </ul>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal photo gallery -->
+  	  <div id="modalGallery" class="modal__gallery gallery">
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-1.png" alt="Название фото">
+  	        <figcaption class="gallery__figcaption">Название фото</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-2.png" alt="Название фото-1">
+  	        <figcaption class="gallery__figcaption">Название фото-1</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-3.png" alt="Название фото-2">
+  	        <figcaption class="gallery__figcaption">Название фото-2</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-4.png" alt="Название фото-3">
+  	        <figcaption class="gallery__figcaption">Название фото-3</figcaption>
+  	      </figure>
+  	    </div>
   	  </div>
-  	  <!-- End Modal Photo Gallery Image and Photo -->
+  	  <!-- End modal photo gallery -->
   	  <button class="close-button" aria-label="Close modal" type="button" data-close>
   	    <span aria-hidden="true">&times;</span>
   	  </button>
-  	</div>	<div id="modalPhotoManufacturing" class="modal-photo">
-  	  <div class="modal-photo__top-container">
-  	    <div class="modal-photo__logo">
+  	</div>	<div id="modalPhotoManufacturing" class="modal">
+  	  <!-- Begin modal logo and headline -->
+  	  <div class="modal__top-container">
+  	    <div class="modal__logo">
   	      <div class="logo">
   	        <img src="assets/img/logo.svg" alt="Vitrus" class="logo__image">
   	      </div>    </div>
-  	    <h5 class="modal-photo__headline">Электромонтажные работы на производстве</h5>
+  	    <h5 class="modal__headline">Электромонтажные работы на производстве</h5>
   	  </div>
-  	  <!-- Begin Modal Photo Gallery Image and Photo -->
-  	  <div id="servicesPhotoManufacturing" class="modal-photo__gallery">
-  	    <button class="modal-photo__gallery-previous">
-  	      <span class="show-for-sr">Previous Slide</span> &#9664;&#xFE0E;
-  	    </button>
-  	    <button class="modal-photo__gallery-next">
-  	      <span class="show-for-sr">Next Slide</span> &#9654;&#xFE0E;
-  	    </button>
-  	    <ul class="modal-photo__gallery-photos">
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	      <li class="modal-photo__gallery-photos-item is-active">
-  	        <img class="modal-photo__gallery-photos-image" src="assets/img/section/services/modal/placeholder_640x360.png" alt="Электромонтаж в квартире">
-  	      </li>
-  	    </ul>
+  	  <!-- End modal logo and headline -->
+  	  <!-- Begin modal photo gallery -->
+  	  <div id="modalGallery" class="modal__gallery gallery">
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-1.png" alt="Название фото">
+  	        <figcaption class="gallery__figcaption">Название фото</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-2.png" alt="Название фото-1">
+  	        <figcaption class="gallery__figcaption">Название фото-1</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-3.png" alt="Название фото-2">
+  	        <figcaption class="gallery__figcaption">Название фото-2</figcaption>
+  	      </figure>
+  	    </div>
+  	    <div>
+  	      <figure class="gallery__figure">
+  	        <img class="gallery__image" src="assets/img/section/services/modal/placeholder_1200_600-4.png" alt="Название фото-3">
+  	        <figcaption class="gallery__figcaption">Название фото-3</figcaption>
+  	      </figure>
+  	    </div>
   	  </div>
-  	  <!-- End Modal Photo Gallery Image and Photo -->
+  	  <!-- End modal photo gallery -->
   	  <button class="close-button" aria-label="Close modal" type="button" data-close>
   	    <span aria-hidden="true">&times;</span>
   	  </button>
