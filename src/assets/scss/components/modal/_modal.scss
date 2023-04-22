@@ -1,14 +1,18 @@
 /*===========
-	2.5.3 Modal 
+	4.5.3 Modal 
 =============*/
 .modal {
-	@include reveal-modal-base;
-	@include reveal-modal-width($width: 80%,
+	@include reveal-modal-width(
+		$width: 80%, 
 		$max-width: 75rem);
 	border: none;
 	border-radius: 5px;
 	color: $colorGrayLight;
-	overflow: hidden;
+	top: 5px;
+
+	&_notscroll {
+		overflow: hidden;
+	}
 	
 	&__top-container {
 		@include xy-grid-container;
@@ -60,7 +64,9 @@
 	}
 
 	&__gallery {
-		padding: 2rem;
+		padding: 3rem;
+		width: 100%;
+		height: auto;
 	}
 
 	&__tabs-container {
@@ -111,6 +117,8 @@
 		color: $colorGrayLight;
 		border: 1px solid $colorBlueLight;
 		background: none;
+		max-height: 80vh;
+		overflow-y: auto;
 	}
 
 	&__tabs-panel {
@@ -152,34 +160,38 @@
 	}
 
 	&__button {
+		margin-top: 1rem;
 		@include flex;
   	@include flex-align(center, middle);
 	}
 }
 
+// Photo gallery
 .gallery {
+	overflow: hidden;
 
 	&__figure {
+		//@include responsive-embed(5 by 3);
 		position: relative;
 	}
 
 	&__image {
-		max-width: initial;
+		width: 100%;
+		height: auto;
+   	object-fit: cover;
 	}
 
 	&__figcaption {
 		@include orbit-caption;
 		font-family: $capitalFontFamily;
 		font-size: rem-calc(18);
-		opacity: 0.55;
 	}
 }
 
 .slick-arrow {
-	width: 60px;
-  height: 60px;
+	width: 75px;
+  height: 75px;
   border-color: #000;
-  position: absolute;
 }
 
 .slick-prev {
@@ -194,6 +206,7 @@
 
 .slick-dots {
 	bottom: -5px;
+
 
 	& li {
 		margin: 0;

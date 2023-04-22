@@ -15,11 +15,13 @@ import named         from 'vinyl-named';
 import uncss         from 'uncss';
 import autoprefixer  from 'autoprefixer';
 import ttf2woff2     from 'gulp-ttf2woff2';
+import ghPages       from 'gh-pages';
 
-
-// Add package gh-pages & module path
-const ghPages = require('gh-pages');
-const path = require('path');
+// Deploy in GitHub Pages
+gulp.task('deploy', function() {
+	return gulp.src('./dist/**/*')
+		.pipe(ghPages());
+})
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -82,8 +84,9 @@ function sass() {
 
   const postCssPlugins = [
     // Autoprefixer
-    autoprefixer(),
-
+    autoprefixer({
+      overrideBrowserslist: ['last 2 versions', 'ie >= 9', 'android >= 4.4', 'ios >= 7']
+    })
     // UnCSS - Uncomment to remove unused styles in production
     // PRODUCTION && uncss.postcssPlugin(UNCSS_OPTIONS),
   ].filter(Boolean);
@@ -169,12 +172,6 @@ function fonts() {
   return gulp.src(PATHS.fonts)
     .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
 }
-
-// Deploy GitHub Pages (gh-pages)
-function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), './dist'), cb);
-}
-exports.deploy = deploy;
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {

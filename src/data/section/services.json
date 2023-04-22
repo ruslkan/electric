@@ -34,19 +34,31 @@
     ],
     "gallery": [
       {
-        "image": "assets/img/section/services/modal/placeholder_1200_600-1.png",
+        "image": "assets/img/section/services/modal/apartment/photo-1.jpg",
         "image_name": "Название фото"
       },
       {
-        "image": "assets/img/section/services/modal/placeholder_1200_600-2.png",
+        "image": "assets/img/section/services/modal/apartment/photo-2.jpg",
         "image_name": "Название фото-1"
       },
       {
-        "image": "assets/img/section/services/modal/placeholder_1200_600-3.png",
+        "image": "assets/img/section/services/modal/apartment/photo-3.jpg",
         "image_name": "Название фото-2"
       },
       {
-        "image": "assets/img/section/services/modal/placeholder_1200_600-4.png",
+        "image": "assets/img/section/services/modal/apartment/photo-4.jpg",
+        "image_name": "Название фото-3"
+      },
+      {
+        "image": "assets/img/section/services/modal/apartment/photo-5.jpg",
+        "image_name": "Название фото-3"
+      },
+      {
+        "image": "assets/img/section/services/modal/apartment/photo-6.jpg",
+        "image_name": "Название фото-3"
+      },
+      {
+        "image": "assets/img/section/services/modal/apartment/photo-7.jpg",
         "image_name": "Название фото-3"
       }
     ]
