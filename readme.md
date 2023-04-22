@@ -1,4 +1,4 @@
-### Introduction
+### Introduction 1
 
 This is the layout of a landing page for an electrician. With adaptation to mobile screens.
 Demo: https://ruslkan.github.io/electric/
